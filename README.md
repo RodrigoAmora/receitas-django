@@ -2,9 +2,9 @@
 Projeto para listar receitas feito em Python com Django.
 <hr>
 
-Dependencias:
+Dependências:
 -------------
-Para instalar as dependencias execute o comando no terminal: `pip install -r requirements.txt`
+Para instalar as dependências execute o comando no terminal: `pip install -r requirements.txt`
 
 Banco de dados:
 ---------------
