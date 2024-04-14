@@ -1,4 +1,6 @@
 # receitas-django
+Projeto para listar receitas feito em Python com Django.
+<hr>
 
 Dependencias:
 -------------
@@ -6,7 +8,7 @@ Para instalar as dependencias execute o comando no terminal: `pip install -r req
 
 Banco de dados:
 ---------------
-Para rodar criar as tableas no banco de dados rode as migrations executando o comando no terminal: `python manage.py migrate`
+Para criar as tableas no banco de dados rode as migrations executando o comando no terminal: `python manage.py migrate`
 
 Rodando o projeto:
 ------------------
