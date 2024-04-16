@@ -13,3 +13,5 @@ Para criar as tableas no banco de dados rode as migrations executando o comando 
 Rodando o projeto:
 ------------------
 Para rodar o projeto execute o comando no terminal: `python manage.py runserver 0.0.0.0:8080`
+
+<hr>
