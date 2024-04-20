@@ -1,4 +1,6 @@
 # receitas-django
+Descrição:
+----------
 Projeto para listar receitas feito em Python com Django.
 <hr>
 
