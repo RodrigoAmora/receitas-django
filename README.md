@@ -2,7 +2,6 @@
 Descrição:
 ----------
 Projeto para listar receitas feito em Python com Django.
-<hr>
 
 Dependências:
 -------------
@@ -24,5 +23,3 @@ Para rodar o projeto execute o comando no terminal:
 ```shell script
 python manage.py runserver 0.0.0.0:8080
 ```
-
-<hr>
