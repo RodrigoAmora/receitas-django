@@ -12,6 +12,7 @@ pip install -r requirements.txt
 
 Banco de dados:
 ---------------
+O projeto usa o MySQL.<br>
 Para criar as tableas no banco de dados rode as migrations executando o comando no terminal:
 ```shell script
 python manage.py migrate
