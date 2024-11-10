@@ -80,8 +80,9 @@ DATABASES = {
         'NAME': 'receitas_django',
         'USER': 'root',
         'PASSWORD': 'root',
-        'HOST':'localhost',
-        'PORT':'8889',
+        'HOST':'mysql-server',
+        'PORT':'3306',
+        'OPTIONS': {'auth_plugin': 'mysql_native_password'},
     }
 }
 
