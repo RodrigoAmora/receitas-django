@@ -1,0 +1,43 @@
+version: "3.7"
+services:
+  mysql-service:
+    image: mysql/mysql-server:8.0.32-1.2.11-server
+    container_name: 'mysql-server'
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - mysql-service:/var/lib/mysql
+    networks:
+      - receitas-network
+    restart: always
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=receitas_django
+      - MYSQL_ROOT_HOST=127.0.0.1
+    ports:
+      - "3306:3306"
+    expose:
+      - '3306'
+  web-django:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: 'web-django'
+    container_name: 'web-django'
+    networks:
+      - receitas-network
+    ports:
+    - "80:8000"
+    expose:
+      - "80"
+    depends_on:
+      - mysql-service
+    links:
+      - mysql-service
+networks:
+  receitas-network:
+    driver: bridge
+
+volumes:
+  mysql-service:
